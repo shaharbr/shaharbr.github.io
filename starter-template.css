@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+}
+
+@media print {
+  
+  .lineunder {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .name {
+    font-size: 16pt;
+    font-weight: bold;
+  }
+
+  .url {
+    float: right;
+    padding-top: 6pt;
+    font-weight: bold;
+  }
+  
+  .head {
+    font-weight: bold;
+  }
+
+  .main, .footer {
+    font-family: "Computer Modern", Times, "Liberation Serif", serif;
+  }
+  
+  .main {
+    padding: 0;
+  }
+  
+  .footer {
+    display: none;
+  }
+  
+  .cv {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ol.publications {
+    margin-left: 1.7em;
+  }
+
+  .pagenumber {
+    left: 0;
+  }
+
+  .pagenumber:after {
+    counter-increment: page;
+    content: counter(page);
+  }
+
+  .col-sm-3 {
+    width: 20%;
+    float: left;
+  }
+
+  .col-sm-9 {
+    width: 80%;
+    float: left;
+  }
+
+  .col-print-12 {
+    width: 100%;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+}
+
+@media not print {
+  .main {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 95%
+  }
+
+  body.index {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    min-height: 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+  }
+
+  body.other {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    min-height: 100%;
+    background-color: #18335d;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+  }
+  
+  .cv {
+    font-size: 18pt;
+  }
+  
+  .head {
+    font-size: 14pt;
+  }
+  
+  .date{
+    padding-top: 4pt;
+  }
+  
+  .footer {
+    color: #ffffff;
+    position: absolute;
+  }
+  
+  .printonly, .pagenumber {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    ol {
+      margin-left: 1.7em;
+    }
+  }
+
+}
+
+.footer {
+  bottom: 0;
+  font-size: 10pt;
+  padding: 5px;
+}
+
+.absright {
+  right: 0;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.nobreak, ul, li {
+  page-break-inside: avoid;
+}
+
+a[href]:after { content: none; }
+
+.avoidwrap { display: inline-block; }
+
+.caption {
+  font-size: 10px;
+}
+
+.date {
+  float: right;
+}
+
+.right {
+  float: right;
+}
+
+ul.body {
+  list-style: none;
+  padding: 0;
+}
+
+ol {
+    padding: 0;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
