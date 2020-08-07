@@ -76,13 +76,13 @@ html {
 
 @media not print {
   .main {
-    padding: 3000px;
+    padding: 100px;
     background-color: rgba(255, 255, 255, 0.7);
     max-width: 95%
   }
 
   body.index {
-    padding-top: 8000px;
+    padding-top: 100px;
     padding-bottom: 30px;
     min-height: 100%;
     background-size: cover;
@@ -93,7 +93,7 @@ html {
   }
 
   body.other {
-    padding-top: 8000px;
+    padding-top: 100px;
     padding-bottom: 30px;
     min-height: 100%;
     background-color: #18335d;
